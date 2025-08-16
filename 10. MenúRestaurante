@@ -1,0 +1,61 @@
+Algoritmo MenúRestaurante
+	Definir Platos, Bebidas, MetodoPago Como Caracter
+	Definir Subtotal, PrecioPlato, PrecioBebidas, TotalSinDescuento, TotalConDescuento Como Real
+	
+	PrecioPlato <- 0
+	PrecioBebidas <- 0
+	Subtotal <- 0
+	
+	Escribir "Bienvenidos al restaurante, que desea comer? Tenemos 3 platos (Bandeja paisa, Sancocho, Carne Asada "
+	Leer Platos
+	
+	Escribir "-----------------"
+	
+	Escribir "Listo, el precio por el plato: ", Platos, " es de"
+	Leer PrecioPlato
+	
+	Escribir "-----------------"
+	
+	Escribir "Listo, tambien tenemos bebidas, cual desea tomar? (Gaseosa, Limonada, Jugos)"
+	Leer Bebidas
+	
+	Escribir "-----------------"
+	
+	Escribir "Listo, el precio por la bebida ", Bebidas, " es"
+	Leer PrecioBebidas
+	
+	TotalSinDescuento <- PrecioPlato + PrecioBebidas
+	
+	Escribir "-----------------"
+	
+	Escribir "Con cual metodo de pago desea pagar (Efectivo, Tarjeta de credito o Cheque"
+	Leer MetodoPago
+	
+	Escribir "-----------------"
+	
+	Segun MetodoPago Hacer
+		Caso "Efectivo" :
+			Escribir "Este metodo de pago no tiene descuento"
+			Subtotal <- TotalSinDescuento * 1;
+			TotalConDescuento <- TotalSinDescuento - Subtotal
+			Escribir "El total es de: ", TotalSinDescuento
+			
+		Caso "Tarjeta de credito" :
+			Escribir "Este metodo de pago tiene un descuento de 10%"
+			Subtotal <- TotalSinDescuento * 0.1;
+			TotalConDescuento <- TotalSinDescuento - Subtotal
+			Escribir "El total es de: ", TotalSinDescuento
+			Escribir "El total con descuento es: ", TotalConDescuento
+			
+		Caso "Cheque" :
+			Escribir "Este metodo de pago tiene un descuento de 3%"
+			Subtotal <- TotalSinDescuento * 0.03;
+			TotalConDescuento <- TotalSinDescuento - Subtotal
+			Escribir "El total es de: ", TotalSinDescuento
+			Escribir "El total con descuento es: ", TotalConDescuento
+			
+		De Otro Modo:
+			Escribir "Lo sentimos, no aceptamos este metodo de pago " MetodoPago
+	FinSegun
+	
+FinAlgoritmo

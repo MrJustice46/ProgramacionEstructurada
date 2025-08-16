@@ -1,0 +1,28 @@
+Algoritmo TemperaturaAscensor
+	Definir piso, Temperatura Como Real
+	
+	Escribir "¿Cual es la temperatura actual?"
+	Leer Temperatura
+	
+	Escribir "-----------------"
+	
+	Si Temperatura >= 20 Y Temperatura <= 25  
+		Escribir "La temperatura: ", Temperatura "°C es valida"
+		
+		Escribir "-----------------"
+		
+		Escribir "El edificio tiene 5 pisos, ingrese el piso al cual desea ir"
+		Leer piso
+		
+		Escribir "-----------------"
+		
+		Si piso >= 1 Y piso <= 5 Entonces
+			Escribir "Moviendo al piso: ", piso
+		SiNo
+			Escribir "Error el piso no existe"
+		FinSi
+	SiNo
+		Escribir "Lo sentimos la temperatura no es adecuada no podemos mover el ascensor por su seguridad :("
+	FinSi
+	
+FinAlgoritmo

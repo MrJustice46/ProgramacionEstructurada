@@ -1,0 +1,47 @@
+Algoritmo AsistenteVirtualCine
+	Definir Edad, GrupoEdad Como Entero
+	
+	Escribir "Bienvenido al Asistente virtual de cinemark, me encargo de recomendar peliculas :D"
+	
+	Escribir "--------------------------"
+	
+	Escribir "Porfavor ingrese su edad para recomendar peliculas"
+	Leer Edad
+	
+	Escribir "--------------------------"
+	
+	Si Edad >= 1 Y Edad < 7 Entonces
+		GrupoEdad <- 1
+	SiNo
+		Si Edad >= 7 Y Edad <= 17 Entonces
+			GrupoEdad <- 2
+		SiNo
+			Si Edad >= 18 Y Edad <= 30 Entonces
+				GrupoEdad <- 3
+			SiNo
+				Si Edad >= 31 Entonces
+					GrupoEdad <- 4
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+	Segun GrupoEdad Hacer
+		Caso 1 :
+			Escribir "Recomendación: Peliculas animadas y educativas"
+			Escribir "Algunas pueden ser: Toy Story, Flow, Mosnters Inc"
+		Caso 2 :
+			Escribir "Recomendación: Peliculas de comedia, animadas y familiares"
+			Escribir "Algunas pueden ser: Happy Gilmore, Son como niños"
+		Caso 3 :
+			Escribir "Recomendación: Peliculas de acción, drama, terror, ciencia ficción y comedia"
+			Escribir "Algunas pueden ser: Avengers End Game, El conjuro, Interestelar, 500 dias con summer"
+		Caso 4 :
+		Escribir "Recomendación: peliculas clasicas y dramas"
+		Escribir "Algunas pueden ser: Forest Gump, Ace Ventura, Todopoderoso"
+		
+		De Otro Modo:
+		Escribir "Error edad no valida " GrupoEdad
+	FinSegun
+	
+FinAlgoritmo

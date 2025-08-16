@@ -1,0 +1,100 @@
+Algoritmo sin_titulo
+	Definir PuntosEquipo1, PuntosEquipo2 Como Entero
+	Definir ResultadoPartido1, ResultadoPartido2 Como Cadena
+	
+	PuntosEquipo1 <- 0 
+	PuntosEquipo2 <- 0
+	
+	Escribir "Ingrese el resultado del partido 1 (Ganado, Perdido o Empatado) para el primer equipo: "
+	Leer ResultadoPartido1
+	
+	Segun ResultadoPartido1 Hacer
+		Caso "Ganado" :
+			PuntosEquipo1 <- PuntosEquipo1 + 30
+			Escribir "------------------------------ "
+			Escribir "Equipo 1 gana 30 puntos"
+		
+		Caso "Empatado" :
+			PuntosEquipo1 <- PuntosEquipo1 + 10
+			Escribir "------------------------------ "
+			Escribir "Equipo 1 gana 10 puntos"
+			
+		Caso "Perdido" :
+			PuntosEquipo1 <- PuntosEquipo1 + 0
+			Escribir "------------------------------ "
+			Escribir "Equipo 1 no gana puntos"
+	FinSegun
+	
+	Escribir "------------------------------ "
+	
+	Escribir "Ingrese el resultado del partido 1 (Ganado, Perdido o Empatado) para el segundo equipo: "
+	Leer ResultadoPartido1
+	
+	Segun ResultadoPartido1 Hacer
+		Caso "Ganado" :
+			PuntosEquipo2 <- PuntosEquipo2 + 30
+			Escribir "------------------------------ "
+			Escribir "Equipo 2 gana 30 puntos"
+			
+		Caso "Empatado" :
+			PuntosEquipo2 <- PuntosEquipo2 + 10
+			Escribir "------------------------------ "
+			Escribir "Equipo 2 gana 10 puntos"
+			
+		Caso "Perdido" :
+			PuntosEquipo2 <- PuntosEquipo2 + 0
+			Escribir "------------------------------ "
+			Escribir "Equipo 2 no gana puntos"
+	FinSegun
+	
+	Escribir "------------------------------ "
+	
+	Escribir "Ingrese el resultado del partido 2 (Ganado, Perdido o Empatado) para el primer equipo: "
+	Leer ResultadoPartido2
+	
+	Segun ResultadoPartido2 Hacer
+		Caso "Ganado" :
+			PuntosEquipo1 <- PuntosEquipo1 + 30
+			Escribir "------------------------------ "
+			Escribir "Equipo 1 gana 30 puntos"
+			
+		Caso "Empatado" :
+			PuntosEquipo1 <- PuntosEquipo1 + 10
+			Escribir "------------------------------ "
+			Escribir "Equipo 1 gana 10 puntos"
+			
+		Caso "Perdido" :
+			PuntosEquipo1 <- PuntosEquipo1 + 0
+			Escribir "------------------------------ "
+			Escribir "Equipo 1 no gana puntos"
+	FinSegun
+	
+	Escribir "------------------------------"
+	
+	Escribir "Ingrese el resultado del partido 2 (Ganado, Perdido o Empatado) para el segundo equipo: "
+	Leer ResultadoPartido2
+	
+	Segun ResultadoPartido2 Hacer
+		Caso "Ganado" :
+			PuntosEquipo2 <- PuntosEquipo2 + 30
+			Escribir "------------------------------ "
+			Escribir "Equipo 2 gana 30 puntos"
+			
+		Caso "Empatado" :
+			PuntosEquipo2 <- PuntosEquipo2 + 10
+			Escribir "------------------------------ "
+			Escribir "Equipo 2 gana 10 puntos"
+			
+		Caso "Perdido" :
+			PuntosEquipo2 <- PuntosEquipo2 + 0
+			Escribir "------------------------------ "
+			Escribir "Equipo 2 no gana puntos"
+	FinSegun
+	
+	Escribir "------------------------------ "
+	
+	Escribir "Clasificación actual"
+	Escribir "Equipo1: ", PuntosEquipo1
+	Escribir "Equipo2: ", PuntosEquipo2
+	
+FinAlgoritmo
