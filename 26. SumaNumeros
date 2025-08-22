@@ -1,0 +1,26 @@
+Algoritmo SumaNumeros
+	Definir Cantidad, Nums Como Entero
+	Definir Num, Suma Como Real
+	
+	Suma <- 0
+	
+	Escribir "¿Cuantos numeros desea ingresar?"
+	Leer Cantidad
+	Escribir "--------------------------------------"
+	
+	Para Nums <- 1 Hasta Cantidad Con Paso 1 Hacer
+		Escribir "Ingrese el número ", Nums, ": "
+        Leer Num
+		Escribir "--------------------------------------"
+        
+        Si Num <= 0 Entonces
+            Escribir "Número inválido. No será sumado."
+			Escribir "--------------------------------------"
+        SiNo
+			Suma <- Suma + Num
+        FinSi
+	FinPara
+	
+    Escribir "La suma total de los números válidos es: ", Suma
+	
+FinAlgoritmo

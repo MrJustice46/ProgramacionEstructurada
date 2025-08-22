@@ -1,0 +1,35 @@
+Algoritmo TiendaVirtual
+    Definir Cantidad, Productos Como Entero
+    Definir NombreProducto, ResumenAcumulador Como Cadena
+    Definir Precio, TotalGeneral Como Real
+    
+    TotalGeneral <- 0
+    ResumenAcumulador <- ""
+    
+    Escribir "¿Cuántos productos desea registrar al carrito?"
+    Leer Cantidad
+	
+    Escribir "--------------------------------------"
+    
+    Para Productos <- 1 Hasta Cantidad Con Paso 1 Hacer
+        Escribir "Ingrese el nombre del producto ", Productos, " :"
+        Leer NombreProducto
+		
+		Escribir "--------------------------------------"
+        
+        Escribir "Ingrese el precio de ", NombreProducto, " :"
+        Leer Precio
+		
+        Escribir "--------------------------------------"
+        
+        TotalGeneral <- TotalGeneral + Precio
+        
+        ResumenAcumulador <- ResumenAcumulador + NombreProducto + " -> $" + ConvertirATexto(Precio) + " | "
+    FinPara
+    
+    Escribir "Resumen de compras"
+    Escribir ResumenAcumulador
+    Escribir "--------------------------------------"
+    Escribir "Total de la compra: $", TotalGeneral
+FinAlgoritmo
+

@@ -1,0 +1,34 @@
+Algoritmo JuegoAdivinanza
+	
+	Definir Num, Intentos Como Real;
+	
+	Escribir " te tenemos un juego de numeros ";
+	Escribir ""
+	
+	Escribir " por favor adivina un numero del 1 al 100";
+	Num = Aleatorio (1,100)
+	Escribir "----------------------------"
+	
+	Escribir " digita el numero por favor: ";
+	Leer Intentos;
+	
+	Escribir "----------------------------"
+
+	Mientras Num <> Intentos Hacer
+		Si Intentos < Num Entonces
+			Escribir " el numero secreto es mayor al que elegiste ";
+			Escribir "----------------------------"
+		SiNo
+			Escribir " el numero secreto es menor al que elegiste";
+			Escribir "----------------------------"
+		FinSi
+		
+		Escribir " digita otro numero :"; 
+		Leer Intentos;
+		
+	FinMientras
+	
+	Escribir "----------------------------"
+	Escribir " correcto el numero secreto era: ", Num;
+	
+FinAlgoritmo

@@ -1,0 +1,27 @@
+Algoritmo Impresora
+	Definir papel,cantidadImprimir Como Real
+
+	
+	Escribir 'Ingrese cuantas hojas hay en la impresora'
+	Leer papel
+	
+	Mientras papel > 0 Hacer
+		
+		Escribir "------------------------------"
+		
+		Escribir 'Ingrese cuantas paginas desea imprimir'
+		Leer cantidadImprimir
+		
+		Escribir "------------------------------"
+		
+		Si cantidadImprimir <= papel Entonces
+			papel <- papel - cantidadImprimir
+			Escribir 'Se imprimieron ',cantidadImprimir,' paginas'
+			Escribir 'El total de papel restante es ',papel
+		SiNo
+			Escribir 'No hay suficiente papel, solo quedan ", papel, " hojas"
+		FinSi
+	FinMientras
+	Escribir "------------------------------"
+	Escribir "Ya no quedan hojas disponibles, fin de la impresion"
+FinAlgoritmo

@@ -1,0 +1,38 @@
+Algoritmo VentasTienda
+	Definir Cantidad, Productos, CantidadVendida Como Entero
+    Definir NombreProducto, ResumenAcumulador Como Cadena
+    Definir Precio, TotalVenta, TotalGeneral Como Real
+    
+    TotalGeneral <- 0
+	ResumenAcumulador <- ""
+    
+    Escribir "¿Cuántos productos desea registrar?"
+    Leer Cantidad
+	
+	Escribir "--------------------------------------"
+    
+    Para Productos <- 1 Hasta Cantidad Con Paso 1 Hacer
+        Escribir "Ingrese el nombre del producto ", Productos, " :"
+        Leer NombreProducto
+        
+        Escribir "Ingrese el precio de ", NombreProducto, " :"
+        Leer Precio
+		
+		Escribir "--------------------------------------"
+        
+        Escribir "Ingrese la cantidad vendida de ", NombreProducto, " :"
+        Leer CantidadVendida
+		
+		Escribir "--------------------------------------"
+        
+        TotalVenta <- Precio * CantidadVendida
+        TotalGeneral <- TotalGeneral + TotalVenta
+        
+        ResumenAcumulador <- ResumenAcumulador + NombreProducto + " -> $" + ConvertirATexto(TotalVenta) + " | "
+    FinPara
+    
+    Escribir "Resumen de ventas"
+    Escribir ResumenAcumulador
+	Escribir "--------------------------------------"
+    Escribir "Total general de ventas: $", TotalGeneral
+FinAlgoritmo

@@ -1,0 +1,26 @@
+Algoritmo GestionTareas
+	Definir Tarea, DescripcionTarea, FechaTarea, Lista, Respuesta Como Caracter
+	
+	Repetir
+		Escribir "Ingrese el nombre de la tarea"
+		Leer Tarea
+		Escribir "----------------------------"
+		Escribir "Ingrese descripcion de la tarea"
+		Leer DescripcionTarea
+		Escribir "----------------------------"
+		Escribir "Ingrese la fecha de vencimiento"
+		Leer FechaTarea
+		Escribir "----------------------------"
+		
+		Escribir "Tarea: ", Tarea
+		Escribir "Descripcion: ", DescripcionTarea
+		Escribir "Vence: ", FechaTarea
+		Escribir "----------------------------"
+		
+		Escribir "¿Desea ingresar otra tarea?"
+		Leer Respuesta
+		Escribir "----------------------------"
+		
+	Hasta Que Respuesta = "No" o Respuesta = "no" o Respuesta = "NO"
+	
+FinAlgoritmo

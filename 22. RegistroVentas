@@ -1,0 +1,26 @@
+Algoritmo RegistroVentas
+	Definir PrecioProducto, TotalAcumulativo Como Real
+	Definir Respuesta, Producto Como Caracter
+	
+	Suma <- 0
+	
+	Repetir
+		Escribir "Ingrese el nombre del producto: "
+		Leer Producto
+		Escribir "--------------------------------------"
+		Escribir "Ingrese el precio del producto: ", Producto
+		Leer PrecioProducto
+		Escribir "--------------------------------------"
+		Escribir "Producto: ", Producto
+		Escribir "Precio: ", PrecioProducto
+		TotalAcumulativo <- TotalAcumulativo + PrecioProducto
+		
+		Escribir "--------------------------------------"
+		Escribir "¿Desea ingresar otra venta?"
+		Leer Respuesta
+		Escribir "--------------------------------------"
+	Hasta Que Respuesta = "No" o Respuesta = "no" o Respuesta = "NO"
+
+	Escribir "El total de las ventas de los productos es: ", TotalAcumulativo
+	Escribir "--------------------------------------"
+FinAlgoritmo

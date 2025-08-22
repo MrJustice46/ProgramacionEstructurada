@@ -1,0 +1,37 @@
+Algoritmo CajeroAutomatico
+	Definir Monto, Saldo, total Como Real
+	
+	Saldo <- 0
+	Monto <- 0
+	
+	Escribir "Ingrese el saldo disponible de la cuenta";
+	Leer Saldo;
+	
+	Mientras Saldo > 0 Hacer
+		Escribir "------------------------------"
+		Escribir "	Ingrese el monto que desea retirar";
+		Leer Monto;
+		
+		Si Monto > Saldo
+			Escribir "------------------------------"
+			Escribir "El monto excede el saldo"
+		SiNo
+			Si Monto <= Saldo Entonces
+				Saldo <- Saldo - Monto
+				Escribir "------------------------------"
+				Escribir "Retiro exitoso: ", Monto
+				Escribir "Su saldo actual es: ", Saldo
+			SiNo
+				Escribir "No tienes saldo suficiente"
+			FinSi
+		FinSi
+		
+		Si Saldo <= 0
+			Escribir "No tiene suficiente dinero"
+			Escribir "------------------------------"
+			Escribir "Gracias por utilizar nuestro servicio"
+		FinSi
+		
+		
+	FinMientras
+FinAlgoritmo

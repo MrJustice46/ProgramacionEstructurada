@@ -1,0 +1,28 @@
+Algoritmo ViajeCoche
+	Definir Distancia, Velocidad, TiempoEstimado, Resultado Como Real
+	Definir Respuesta Como Caracter
+	
+	Resultado <- 0
+	Respuesta <- "Si"
+	
+	Mientras Respuesta="Si" o Respuesta="si" o Respuesta="SI" Hacer
+		Escribir "Ingrese la distancia total del viaje (Km) "
+		Leer Distancia
+		Escribir "----------------------------"
+		
+		Escribir "Ingrese la velocidad promedio del coche (H)"
+		Leer Velocidad
+		Escribir "----------------------------"
+		
+		TiempoEstimado <- Distancia/Velocidad
+		Resultado <- Resultado + TiempoEstimado
+		
+		Escribir "¿Desea registrar otro viaje?"
+		Leer Respuesta
+		Escribir "----------------------------"
+		
+	FinMientras
+	
+	Escribir "El tiempo estimdo del viaje es ", Resultado, " Km/H" 
+	
+FinAlgoritmo

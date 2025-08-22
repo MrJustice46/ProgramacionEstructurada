@@ -1,0 +1,17 @@
+Algoritmo SensorTemperaturaBucle
+	Definir Temperatura Como Entero
+	
+	Repetir
+		Escribir "Ingrese la temperatura actual (°C)"
+		Leer Temperatura
+		Escribir "--------------------------------------"
+		
+		Si Temperatura < 18 o Temperatura > 25 Entonces
+			Escribir "La temperatura no esta dentro del rango (18°C o 25°C) por lo tanto no es adecuada, intente nuevamente"
+			Escribir "--------------------------------------"
+		FinSi
+	Hasta Que Temperatura >= 18 Y Temperatura <= 25
+	
+	Escribir "La temperatura esta dentro del rango"
+	
+FinAlgoritmo

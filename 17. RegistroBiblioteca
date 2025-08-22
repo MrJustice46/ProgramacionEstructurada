@@ -1,0 +1,28 @@
+Algoritmo RegistroBiblioteca
+	Definir Titulo, Autor, Respuesta Como Caracter
+	Definir NumPaginas Como Entero
+	
+	Repetir
+		Escribir "Ingrese el nombre del libro"
+		Leer Titulo
+		Escribir "----------------------------"
+		Escribir "Ingrese el autor del libro"
+		Leer Autor
+		Escribir "----------------------------"
+		Escribir "Ingrese el numero de paginas que tiene el libro"
+		Leer NumPaginas
+		Escribir "----------------------------"
+		
+		Escribir "Titulo: ", Titulo
+		Escribir "Autor: ", Autor
+		Escribir "Numero de paginas: ", NumPaginas
+		Escribir "----------------------------"
+		
+		Escribir "¿Desea ingresar otro libro?"
+		Leer Respuesta
+		Escribir "----------------------------"
+		
+	Hasta Que Respuesta = "No" o Respuesta = "no" o Respuesta = "NO"
+	
+FinAlgoritmo
+

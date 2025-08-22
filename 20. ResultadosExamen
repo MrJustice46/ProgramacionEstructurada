@@ -1,0 +1,31 @@
+Algoritmo ResultadosExamen
+	Definir Nota, Suma, ContadorNotas, Promedio Como Real
+	Definir Respuesta Como Caracter
+	
+	Suma <- 0
+	ContadorNotas <- 0
+	
+	Repetir
+		Escribir "Ingrese la nota del examen: "
+		Leer Nota
+		Escribir "--------------------------------------"
+		Suma <- Suma + Nota
+		ContadorNotas <- ContadorNotas + 1
+		Escribir "¿Desea ingresar otra nota?"
+		Leer Respuesta
+		Escribir "--------------------------------------"
+	Hasta Que Respuesta = "No" o Respuesta = "no" o Respuesta = "NO"
+	
+	
+	Promedio <- Suma / ContadorNotas
+	
+	Escribir "El promedio de las notas es: ", Promedio
+	Escribir "--------------------------------------"
+	
+	Si Promedio >= 3.5 Entonces
+		Escribir "Aprobado"
+	SiNo
+		Escribir "Reprobado"
+	FinSi
+	
+FinAlgoritmo

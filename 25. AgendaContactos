@@ -1,0 +1,29 @@
+Algoritmo AgendaContactos
+	Definir Nombre, Telefono, NombresAcumulador, TelefonosAcumulador, ResumenAcumulador Como Caracter
+	Definir Cantidad, Contactos Como Entero
+	
+	ResumenAcumulador <- ""
+	
+	Escribir "¿Cuantos contactos desea registrar?"
+	Leer Cantidad
+	
+	Escribir "--------------------------------------"
+	
+	Para Contactos <- 1 Hasta Cantidad Con Paso 1 Hacer
+		Escribir "Ingrese el nombre del contacto ", Contactos, " :"
+		Leer Nombre
+		Nombre <- Nombre + " "
+		Escribir "--------------------------------------"
+		
+		Escribir "Ingrese el numero de telefono del contacto ", Contactos, " :"
+		Leer Telefono
+		Telefono <- Telefono + " "
+		
+		Escribir "--------------------------------------"
+		
+		ResumenAcumulador <- ResumenAcumulador + Nombre + "-> " + Telefono + "| "
+	FinPara
+	
+	Escribir "Telefonos registrados"
+	Escribir ResumenAcumulador
+FinAlgoritmo

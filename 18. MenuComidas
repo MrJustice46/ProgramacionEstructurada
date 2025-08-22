@@ -1,0 +1,54 @@
+Algoritmo MenuComidas
+	Definir Respuesta Como Caracter
+	Definir Plato, Precio Como Real
+	
+	Escribir "------------- MENÚ -------------"
+	Escribir "1 - Hamburguesa"
+	Escribir "2 - Salchipollo"
+	Escribir "3 - Perro Caliente"
+	Escribir "4 - Sandwich"
+	
+	Repetir
+		Escribir "--------------------------------------"
+		Escribir "Ingrese el numero del plato que desea comprar"
+		Leer Plato
+		Escribir "--------------------------------------"
+		
+		Si Plato = 1 Entonces
+			Escribir "Hamburguesa"
+			Precio <- 7000
+			Escribir "Precio:", Precio
+		SiNo
+			Si Plato = 2 Entonces
+				Escribir "Salchipollo"
+				Precio <- 9000
+				Escribir "Precio:", Precio
+			SiNo
+				Si Plato = 3 Entonces
+					Escribir "Perro Caliente"
+					Precio <- 5000
+					Escribir "Precio:", Precio
+				SiNo
+					Si Plato = 4 Entonces
+						Escribir "Sandwich"
+						Precio <- 6000
+						Escribir "Precio:", Precio
+					SiNo
+						Escribir "El numero seleccionado no pertenece a ninguno del menu, intente de nuevo"
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+		
+		Total <- Total + Precio
+		
+		Escribir "--------------------------------------"
+		Escribir "¿Desea pedir algo más?"
+		Leer Respuesta
+		
+	Hasta Que Respuesta = "No" o Respuesta = "no" o Respuesta = "NO"
+	
+	Escribir "--------------------------------------"
+	Escribir "La cuenta es: ", Total
+	
+FinAlgoritmo

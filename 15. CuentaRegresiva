@@ -1,0 +1,14 @@
+Algoritmo CuentaRegresiva
+	Definir Num Como Entero
+	
+	Escribir "Ingrese un numero entero"
+	Leer Num
+	
+	Mientras Num > 0 Hacer
+		Escribir Num
+		Num <- Num - 1
+	FinMientras
+	
+	Escribir "Se acabo el tiempo"
+	
+FinAlgoritmo

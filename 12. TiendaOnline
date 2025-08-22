@@ -1,0 +1,34 @@
+Algoritmo TiendaOnline
+	Definir Precio, Cantidad, Total, Suma Como Real
+	Definir Respuesta, Producto Como Caracter
+	
+	Suma <- 0
+	Respuesta <- "Si"
+	
+	Mientras Respuesta ="Si" O Respuesta ="si" O Respuesta ="SI" Hacer
+		Escribir "Ingrese el nombre del producto"
+		Leer Producto
+		Escribir "----------------------------"
+		
+		Escribir "Ingrese el precio del producto"
+		Leer Precio
+		Escribir "----------------------------"
+		
+		Escribir "¿Cuantas cantidades desea comprar?"
+		Leer Cantidad
+		Escribir "----------------------------"
+		
+		Total <- Precio * Cantidad
+		Suma <- Suma + Total
+		
+		Escribir "El total del producto es de: ", Total
+		Escribir "----------------------------"
+		
+		Escribir "¿Desea comprar otro producto?"
+		Leer Respuesta
+		Escribir "----------------------------"
+		
+	FinMientras
+	Escribir "El total de los productos es: ", Suma
+	
+FinAlgoritmo

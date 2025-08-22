@@ -1,0 +1,32 @@
+Algoritmo RegistroParqueadero
+	Definir Placa, Hora, ResumenAcumulador  Como Cadena
+	Definir Capacidad, Vehiculos Como Entero
+	
+	ResumenAcumulador <- ""
+	
+	Escribir "¿Cuantas carros ingresaron al parqueadero?"
+	Leer Capacidad
+	
+	Escribir "--------------------------------------"
+	
+	Para Vehiculos <- 1 Hasta Capacidad Con Paso 1
+		Escribir "Numero de placa del vehiculo " Vehiculos
+		Leer Placa
+		Placa <- Placa + " "
+		Escribir "--------------------------------------"
+		
+		Escribir "Hora de ingreso del vehiculo"
+		Leer Hora
+		Hora <- Hora + " "
+		Escribir "--------------------------------------"
+		
+		Escribir "Placa del vehiculo ", Vehiculos, ":", Placa
+		Escribir "Hora de ingreso del vehiculo ", Vehiculos, ":", Hora
+		Escribir "--------------------------------------"
+		
+		ResumenAcumulador <- ResumenAcumulador + Placa + "-> " + Hora + "| "
+	FinPara
+	
+	Escribir "Resumen de vehiculos Registrados:"
+	Escribir ResumenAcumulador
+FinAlgoritmo
