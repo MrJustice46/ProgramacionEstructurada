@@ -10,19 +10,20 @@ Algoritmo ViajeCoche
 		Leer Distancia
 		Escribir "----------------------------"
 		
-		Escribir "Ingrese la velocidad promedio del coche (H)"
+		Escribir "Ingrese la velocidad promedio del coche (Km/H)"
 		Leer Velocidad
 		Escribir "----------------------------"
 		
 		TiempoEstimado <- Distancia/Velocidad
 		Resultado <- Resultado + TiempoEstimado
 		
-		Escribir "¿Desea registrar otro viaje?"
+		Escribir "Â¿Desea registrar otro viaje?"
 		Leer Respuesta
 		Escribir "----------------------------"
 		
 	FinMientras
 	
-	Escribir "El tiempo estimdo del viaje es ", Resultado, " Km/H" 
+	Escribir "El tiempo estimdo del viaje es ", Resultado, " H" 
 	
 FinAlgoritmo
+
